@@ -34,3 +34,25 @@ Answer: A large number of predictors. A high dimension data set. A small number 
 Analysis: Intution here is correct. Work on the statistical terminology more.
 
 **1c**
+
+Question: ... the relationship between the predictors and the response is highly non-linear?
+Answer: We would try a flexible model and want to train it with large sample size to avoid overfitting. 
+Analysis: Correct. An inflexible model would underfit and perform poorly.
+
+**1d**
+
+Question: ... the variance of the error terms, is extremely high? 
+Answer: The variance is already very high to begin with. How do we correct for that? If the variance is high, this means 
+        that any given predictor might be.. way off from the mean. Consider if we had a small sample size.
+        We don't want to overfit a piece of data that could potentially already be way far off from the expected observation. This variance, this default variance, it must be coming from somewhere. I am suggesting that the 
+        predictors themselves are less reliable because of the default high variance. But is that reasonable? Perhaps 
+        the variance is some constant based on factors that have nothing to do with the predictors, e.g. our predictors are age and location and the variance is day of the week. No correlation. 
+
+        That leaves us with this. Will an inflexible or flexible model combat an innate high variance more? 
+        A flexible model will perform better here and help level out some of the variance, broadly speaking.
+Analysis: Wrong! An inflexible model is better here. The flexible model will overfit the varied data. The inflexible
+          model has low variance so doesn't contribute to the variance problem. Generally if you have a variance 
+          problem, don't use a flexible model and introduce more variability. 
+          On the matter of our predictors being influenced by high noise aka ϵ. Well, the predictors are not, 
+          but the outcome aka F(x) is. And it's randomly influenced too, if ϵ is high then there is a higher chance 
+          that our F(x) output will be jumpy, sporadic.. variable. Using a flexible model is not a smart move here.
