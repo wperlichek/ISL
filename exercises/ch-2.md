@@ -56,3 +56,20 @@ Analysis: Wrong! An inflexible model is better here. The flexible model will ove
           On the matter of our predictors being influenced by high noise aka ϵ. Well, the predictors are not, 
           but the outcome aka F(x) is. And it's randomly influenced too, if ϵ is high then there is a higher chance 
           that our F(x) output will be jumpy, sporadic.. variable. Using a flexible model is not a smart move here.
+
+
+***For all problems in 2. Explain whether they are a classification problem or regression problem. 
+Indicate whether we are most interested in inference or prediction. 
+Provide n and p.***
+
+**2a** 
+
+This is a regression problem. CEO salary is quantitative which implies regression.
+
+This is an inference problem. We want to know how one or more predictors impacts the result.
+
+n = 500
+p = {profit, # of employees, industry, CEO salary}.count = 4
+
+
+
