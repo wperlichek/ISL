@@ -71,5 +71,27 @@ This is an inference problem. We want to know how one or more predictors impacts
 n = 500
 p = {profit, # of employees, industry, CEO salary}.count = 4
 
+**2b**
+
+Success or failure - classification problem. Two possible classes - success/failure.
+
+This is a prediction problem - will we have the success or failure class?
+
+We use past data to try and predict which class our new product will fall into. 
+Success is qualitative.
+
+n = 20
+p = 15
+
+**3b**
+
+Regression problem. % change is a number. 
+
+This is an prediction problem - how do changes in the other markets effect the changes in the USD/Euro market given
+what has happened in the past? 
+
+n = 52
+p = 4 (percent change USD/Euro, US market, British market, German market)
+
 
 
