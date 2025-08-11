@@ -83,7 +83,7 @@ Success is qualitative.
 n = 20
 p = 15
 
-**3b**
+**2c**
 
 Regression problem. % change is a number. 
 
