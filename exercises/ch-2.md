@@ -18,3 +18,8 @@ Answer: The actual correct answer here is probably "it depends." Every data set 
         that appoximates the vast amount of data. The worry with a flexible model is that it will overfit the vast
         amount of data, it will "memorize the data", and becomes too specific to that very large data set and doesn't
         embrace the subtle, underlying pattern of the data, making it perform weaker on new data sets.
+
+Analysis: Wrong! A large sample size reduces the risk of overfitting, it does not increase it. Moreover,
+          An inflexible method could still perform poorly on an extremely large dataset because perhaps
+          the model of the data truly isn't described easily, like linearly, and so your inflexible 
+          approach will always have a bias in being inflexible to the subtleties demanded by the data.
