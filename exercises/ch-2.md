@@ -152,15 +152,14 @@ Very flexible advantages for regression: Low bias, our model makes no assumption
                                          Very flexible approaches also allow us to attempt to model very complex
                                          behavior that could never be approximated with less flexible methods.
 
-Very flexible advantages for classification: 
-
 Very flexible disadvantages for regression: We might overfit the data leading to high variance. Our model 
                                             is too invested in what it sees and struggles to smoothly adapt
                                             to new data. When encountering data in the test data, it might 
                                             lead to a wrong prediction. We could have trained on outliers 
                                             which did not represent the underlying, broader pattern of the model.
 
-Very flexible disadvantages for classification: 
+Above, in context of classification: A very flexible model could sometimes pinpoint which class some data with predictors are much better than a less flexible model. It is able to distinguish better. Conversely, it could
+apply the wrong class easily because it is using so many more data points to predict the class. 
 
 When would a flexible approach, in general, be preferred: We think that our training data closely matches any real world data we will get
 
