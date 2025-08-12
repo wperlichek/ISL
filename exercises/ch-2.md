@@ -135,5 +135,22 @@ Predictors: state of birth, age
 Inference or prediction: Inference
 Comments: Do people from certain states enjoy squid more?
 
+**5**
+
+_What are the advantages and disadvantages of a very flexible (versus
+a less flexible) approach for regression or classification? Under what
+circumstances might a more flexible approach be preferred to a less
+flexible approach? When might a less flexible approach be preferred?_
+
+Answer: 
+
+Very flexible advantages for regression: Low bias, our model makes no assumptions about the underlying data,
+                                         uses no premade function to try and approximate its behavior.
+                                         This means, if presented with test data that is close to our training data,
+                                         our model will give good predictions. For a regression, this means
+                                         numerical output from the model will be close to the actual output.
+                                         Very flexible approaches also allow us to attempt to model very complex
+                                         behavior that could never be approximated with less flexible methods.
+
 
 
