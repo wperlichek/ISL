@@ -108,6 +108,6 @@ Training Error: Increasing the flexibility decreases training errors as our stat
 Variance: Variance increases because we overfit the patterns of our data. One data point difference could mean a significant change to our model.
 Bayes Error: Remains flat - this is the ambient noise of the universe that is always the same.
 
-Analysis:
+Analysis: Not quite. Bias does not shoot back up as we increase flexibility. In fact, it continues to decrease.
 
 
