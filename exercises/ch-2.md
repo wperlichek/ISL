@@ -112,3 +112,28 @@ Analysis: Not quite. Bias does not shoot back up as we increase flexibility. In 
 ![alt text](../images/bias-var-ai-gen.png)
 
 
+**4a**
+
+Describe 3 real life applications of classification.
+
+Application: Will a certain person become elected mayor?
+Response: Yes or no
+Predictors: Number of registered democrats, number of registered replications, is person republican or democrat
+Inference or prediction: Prediction
+Comments: We could train the model on polling surveys from the past 50 years but there could be a random error due to
+          the political climate or other factors that are hard to reduce to predictors.
+
+Application: What is the most likely travel wedding destination?
+Response: Location
+Predictors: Age of couple, country of origin, budget
+Inference or prediction: Prediction
+Comments: If a couple is getting married out of their country, where are they most likely to go? The location is the class.
+
+Application: 
+Response:
+Predictors:
+Inference or prediction:
+Comments:
+
+
+
