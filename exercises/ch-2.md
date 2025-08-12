@@ -109,5 +109,6 @@ Variance: Variance increases because we overfit the patterns of our data. One da
 Bayes Error: Remains flat - this is the ambient noise of the universe that is always the same.
 
 Analysis: Not quite. Bias does not shoot back up as we increase flexibility. In fact, it continues to decrease.
+![alt text](../images/bias-var-ai-gen.png)
 
 
