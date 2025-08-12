@@ -152,5 +152,11 @@ Very flexible advantages for regression: Low bias, our model makes no assumption
                                          Very flexible approaches also allow us to attempt to model very complex
                                          behavior that could never be approximated with less flexible methods.
 
+Very flexible advantages for classification: 
+
+When would a flexible approach, in general, be preferred: 
+
+When would an inflexible approach, in general, be preferred:
+
 
 
