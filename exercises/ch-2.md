@@ -165,5 +165,26 @@ When would a flexible approach, in general, be preferred: We think that our trai
 
 When would an inflexible approach, in general, be preferred: The opposite - we are skeptical the training data represents the real world pattern and want a conservative first go at modeling the data.
 
+Analysis: 
+- Even highly flexible models make SOME assumptions about the data. Saying no assumptions is wrong. Watch your language.
+- For classification and flexible, picture the jagged line it creates. It is not the excessive data points.
+- A flexible approach is good when you have a very large # of samples, don't forget that, it's key
+- Inflexible approaches like linear regression are good when intrepretability are paramount
 
 
+**6**
+
+_Describe the differences between a parametric and a non-parametric
+statistical learning approach. What are the advantages of a parametric approach to regression or classification (as opposed to a nonparametric approach)? What are its disadvantages?_
+
+Parametric: Advantages are, it's easier to interpret and adjust complicated systems with finite set of parameters. Disadvantages,
+            it can constrain too much. 3x+4y+2 might even though understandable has clear limitations in representating complex syustems.
+
+Non-parametric: Advantages are the ability to model complex systems. You lose intepretability though, and your function becomes a black box
+                that you don't understand how to adjust or even understand its beahvior.
+
+A parametric learning approach might be appopriate for classification because its high intrepability and relative simplicity lend to classification. 
+Whereas non-parametric form might be desired to create regression outputs that are highly mathematically accurate, when the numbers really count down
+to the last detail, and we don't care how they were produced, just that they're accurate.
+
+Analysis: 
