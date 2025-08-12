@@ -154,9 +154,13 @@ Very flexible advantages for regression: Low bias, our model makes no assumption
 
 Very flexible advantages for classification: 
 
-When would a flexible approach, in general, be preferred: 
+Very flexible disadvantages for regression:
 
-When would an inflexible approach, in general, be preferred:
+Very flexible disadvantages for classification: 
+
+When would a flexible approach, in general, be preferred: We think that our training data closely matches any real world data we will get
+
+When would an inflexible approach, in general, be preferred: The opposite - we are skeptical the training data represents the real world pattern and want a conservative first go at modeling the data.
 
 
 
