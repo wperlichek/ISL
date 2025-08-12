@@ -129,11 +129,11 @@ Predictors: Age of couple, country of origin, budget
 Inference or prediction: Prediction
 Comments: If a couple is getting married out of their country, where are they most likely to go? The location is the class.
 
-Application: 
-Response:
-Predictors:
-Inference or prediction:
-Comments:
+Application: Does your USA birth state have any influence on whether you enjoy squid?
+Response: yes or no
+Predictors: state of birth, age
+Inference or prediction: Inference
+Comments: Do people from certain states enjoy squid more?
 
 
 
