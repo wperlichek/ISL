@@ -188,5 +188,5 @@ Whereas non-parametric form might be desired to create regression outputs that a
 to the last detail, and we don't care how they were produced, just that they're accurate.
 
 Analysis: 
-- The choice between parametric and non-parametric is NOT about Regression vs. Classification.
+- The choice between parametric and non-parametric is NOT about Regression vs. Classification. It's about if we want a prediction or if we want an inference. If we want a prediction, then generally speaking a non-parametric form might be more accurate.
 - A second main disadvantage of non-parametric is that they require a very large amount of observations
