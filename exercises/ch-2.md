@@ -93,5 +93,21 @@ what has happened in the past?
 n = 52
 p = 4 (percent change USD/Euro, US market, British market, German market)
 
+**3A**
+
+![alt text](../images/bias-var.png)
+
+**3b**
+
+Test Error: As we increase the flexibility, we overfit the data and it becomes poor at generalization.
+	    We see the test error shoot up. 
+Bias: Bias is initially high with crude models but then we increase flexibility and bias decreases=
+      because the bias of a pre-made model is not as impactful. However, as flexibility increases
+      the bias returns back strong because now we're biased towards the training data. 
+Training Error: Increasing the flexibility decreases training errors as our statistical learning method becomes an expert on our training data
+Variance: Variance increases because we overfit the patterns of our data. One data point difference could mean a significant change to our model.
+Bayes Error: Remains flat - this is the ambient noise of the universe that is always the same.
+
+Analysis:
 
 
