@@ -1,4 +1,4 @@
-**1a**
+        **1a**
 
 Flexible statistical learning method: Adapts to training data closer. More subject to variance
 
@@ -190,3 +190,43 @@ to the last detail, and we don't care how they were produced, just that they're 
 Analysis: 
 - The choice between parametric and non-parametric is NOT about Regression vs. Classification. It's about if we want a prediction or if we want an inference. If we want a prediction, then generally speaking a non-parametric form might be more accurate.
 - A second main disadvantage of non-parametric is that they require a very large amount of observations
+
+
+**7a**
+
+Euclidean distance = square root of subtracted the first point from the second, square it, then do the same for the other points. Square root
+                     The sum of all of this.
+
+
+Starting point: 0,0,0
+
+Test points: 
+
+0,3,0
+2,0,0
+0,1,3
+0,1,2
+-1,0,1
+1,1,1
+
+The Euclidean distances from the starting point (0,0,0) to each of the test points are:
+3.0 Red 
+2.0 Red
+3.1622776601683795 Red
+2.23606797749979 Green
+1.4142135623730951 Green
+1.7320508075688772 Red
+
+**7b**
+
+If k = 1, then our prediction for classification is Green because that is the closest test point, using k closest neighbors algorithm
+
+**7c**
+
+If k = 3, it is red, because we have 2/3 red test points closer. 
+
+**7d**
+
+Highly non-linear..We would want a smaller k so that we try to pinpoint which side of the boundary we're on.
+A high k with a non-linear boundary we will pick up too much noise.
+
