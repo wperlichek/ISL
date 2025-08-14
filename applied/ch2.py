@@ -10,5 +10,8 @@ def read_csv(path):
         print("Problem reading csv {}", e)
 
 print("Reading in CSV...")
-csv_file = read_csv(BASE_PATH + COLLEGE_DATA)
-print(csv_file)
+colleges = read_csv(BASE_PATH + COLLEGE_DATA)
+college3 = colleges.rename({'Unnamed: 0': 'College'},axis=1)
+college3 = college3.set_index("College")
+college = college3
+print(college.describe())
