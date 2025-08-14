@@ -18,11 +18,19 @@ college = college3
 print(college.describe())
 
 
-pd.plotting.scatter_matrix(college[[
-'Top10perc', 'Apps', 'Enroll']], figsize=(8, 8)) # Top10perc : New students from top 10 % of high school class
+# pd.plotting.scatter_matrix(college[[
+# 'Top10perc', 'Apps', 'Enroll']], figsize=(8, 8)) # Top10perc : New students from top 10 % of high school class
 
-plt.suptitle("College Stats")
-plt.savefig('../plots/my_plot.png')
+# plt.suptitle("College Stats")
+# plt.savefig('../plots/my_plot.png')
+
+pd.plotting.boxplot(college[[
+'Outstate', 'Private']], figsize=(8, 8)) 
+
+plt.suptitle("Outstate vs private")
+
+plt.savefig('../plots/my_plot2.png')
+
 plt.close()
 
 
