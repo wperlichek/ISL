@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 BASE_PATH = "../data/"
 COLLEGE_DATA = "college.csv"
@@ -15,3 +16,14 @@ college3 = colleges.rename({'Unnamed: 0': 'College'},axis=1)
 college3 = college3.set_index("College")
 college = college3
 print(college.describe())
+
+
+pd.plotting.scatter_matrix(college[[
+'Top10perc', 'Apps', 'Enroll']], figsize=(8, 8))
+
+plt.suptitle("College Stats")
+plt.savefig('../plots/my_plot.png')
+plt.close()
+
+
+
