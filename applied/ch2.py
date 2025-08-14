@@ -19,7 +19,7 @@ print(college.describe())
 
 
 pd.plotting.scatter_matrix(college[[
-'Top10perc', 'Apps', 'Enroll']], figsize=(8, 8))
+'Top10perc', 'Apps', 'Enroll']], figsize=(8, 8)) # Top10perc : New students from top 10 % of high school class
 
 plt.suptitle("College Stats")
 plt.savefig('../plots/my_plot.png')
