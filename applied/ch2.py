@@ -24,16 +24,10 @@ print(college.describe())
 
 ## 8e
 
-# Pass the whole DataFrame as the first argument
 pd.plotting.boxplot(college, column='Outstate', by='Private')
-
-# Optional formatting
-plt.title('Out-of-State Tuition by School Type')
-plt.suptitle('') # Removes the automatic title
+plt.suptitle('')
 plt.xlabel('Private School')
 plt.ylabel('Out-of-State Tuition')
-
-plt.suptitle("Private vs Outstate")
 plt.savefig('../plots/my_plot2.png')
 plt.close()
 
