@@ -15,7 +15,7 @@ colleges = read_csv(BASE_PATH + COLLEGE_DATA)
 college3 = colleges.rename({'Unnamed: 0': 'College'},axis=1)
 college3 = college3.set_index("College")
 college = college3
-print(college.describe())
+#
 
 # pd.plotting.scatter_matrix(college[[
 # 'Top10perc', 'Apps', 'Enroll']], figsize=(8, 8)) # Top10perc : New students from top 10 % of high school class
@@ -24,11 +24,14 @@ print(college.describe())
 
 ## 8e
 
-pd.plotting.boxplot(college, column='Outstate', by='Private')
+pd.plotting.boxplot(college, column='Outstate', by='Private', figsize=(10,8))
 plt.suptitle('')
 plt.xlabel('Private School')
-plt.ylabel('Out-of-State Tuition')
+plt.ylabel("Out of state tuition $")
+plt.title('')
 plt.savefig('../plots/my_plot2.png')
+summary_stats = college.groupby('Private')['Outstate'].describe()
+print(summary_stats)
 plt.close()
 
 
