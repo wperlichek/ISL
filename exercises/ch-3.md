@@ -9,8 +9,7 @@ radio, and newspaper, rather than in terms of the coefficients of the
 linear model.__
 
 Conclusion: The data shows it is highly unlikely that devoting money towards TV or Radio will NOT lead
-to an increase in sales. Conversely, the data shows we will likely NOT increase our sales if we devote money
-towards advertising in the newspaper.
+to an increase in sales. For newspaper, the data is inconclusive.
 
 Intercept p-value: Very low, reject the null hypothesis that there is not a base, default amount of sales irrespective of advertising
 
