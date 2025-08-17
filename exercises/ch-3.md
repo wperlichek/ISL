@@ -45,6 +45,7 @@ Key differences:
     - KNN regression is quantitative - we're trying to model the function
 
 Analysis:
+    - Pretty much correct. Obvious addition: classifer vs regression problem, each has own use
 
 
 
