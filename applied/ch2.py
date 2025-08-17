@@ -61,6 +61,8 @@ axs[0, 0].set_ylabel("Count of colleges")
 college["Accept"].plot.hist(ax=axs[0, 1], bins=20, color="skyblue", edgecolor="black")
 college["Enroll"].plot.hist(ax=axs[1, 0], bins=20, color="green", edgecolor="black")
 college["Top10perc"].plot.hist(ax=axs[1, 1], bins=20, color="yellow", edgecolor="black")
+axs[1, 1].set_ylabel("Count of colleges")
+axs[1, 1].set_xlabel("Enrolled students from top 10% of class")
 plt.tight_layout()
 plt.savefig("../plots/CollegeHist.png")
 
@@ -70,6 +72,23 @@ plt.close()
 
 # ~500 colleges receive ~2500 apps
 # ~420 colleges accept ~1250 apps (50% acceptance rate)
-# ~310 colleges enroll ~333 students
+# ~310 colleges enroll ~333 apps
 
 # Summary of above:
+# The most frequent scenario is a college
+# receives about 2500 apps, they accept about half of them,
+# but only about a quarter of those accepted enroll.
+
+
+# What does the 'Top10perc' histogram suggest
+# about the academic profile of incoming students
+# for the majority of these colleges?
+
+# Answer:
+# Of those that enroll
+# The most frequent scenario is about 25 of those students
+# are from the top of their class
+# ~25 students enrolled are top 10% of their class
+
+# The most frequent scenario is a college enrolls
+# 25 students who were the top 10% of their class
