@@ -62,7 +62,7 @@ college["Accept"].plot.hist(ax=axs[0, 1], bins=20, color="skyblue", edgecolor="b
 college["Enroll"].plot.hist(ax=axs[1, 0], bins=20, color="green", edgecolor="black")
 college["Top10perc"].plot.hist(ax=axs[1, 1], bins=20, color="yellow", edgecolor="black")
 axs[1, 1].set_ylabel("Count of colleges")
-axs[1, 1].set_xlabel("Enrolled students from top 10% of class")
+axs[1, 1].set_xlabel("Percentage of enrolled students from top 10% of class")
 plt.tight_layout()
 plt.savefig("../plots/CollegeHist.png")
 
