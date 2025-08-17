@@ -3,11 +3,12 @@ import matplotlib.pyplot as plt
 
 BASE_PATH = "../data/"
 COLLEGE_DATA = "college.csv"
+AUTO_DATA = "auto.csv"
 
 
 def read_csv(path):
     try:
-        return pd.read_csv(path)
+        return pd.read_csv(path, na_values=["?"])
     except Exception as e:
         print("Problem reading csv {}", e)
 
@@ -86,9 +87,12 @@ plt.close()
 
 # Answer:
 # Of those that enroll
-# The most frequent scenario is about 25 of those students
+# The most frequent scenario is about 25% of those students
 # are from the top of their class
-# ~25 students enrolled are top 10% of their class
-
-# The most frequent scenario is a college enrolls
-# 25 students who were the top 10% of their class
+# 25% of 333 ~88 students
+# The most frequent scenario is a college enrolls ~88 students who were in the top 10% of their class
+plt.figure()
+autos = read_csv(BASE_PATH + AUTO_DATA)
+print("Shape: {}".format(autos.shape))
+print("Descriptive stats:")
+print(autos.describe())
