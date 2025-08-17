@@ -54,19 +54,20 @@ x1 = GPA
 x2 = IQ
 X3 = Level (1 for college, 0 for high school)
 x4 = Interaction between GPA and IQ 
-x5 = Interaction between GPA and level
+x5 = Interaction between GPA and Level
 
 Response = starting salary after graduation (in thousands of dollars)
 
 Suppose we use least squares to fit the model, and get:
 
-b0 = 50
-b1 = 20
-b2 = .07
-b3 = 35
-b4 = .01
-b5 = -10
+b0 = 50 (intercept)
+b1 = 20 (GPA)
+b2 = .07 (IQ)
+b3 = 35 (Level)
+b4 = .01 (IQ and GPA)
+b5 = -10 (GPA and Level)
 
 
-
+True or false:  For a fixed value of IQ and GPA, high school graduates earn
+more, on average, than college graduates?
 
