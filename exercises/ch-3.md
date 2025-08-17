@@ -30,5 +30,23 @@ choose the one with the highest coefficient.
 - Interaction effect is valid but be careful when answering the question. You can model TV vs others by holding them constant and still get answer for "should we spend on both" if they are not run simultaneuosly and thus not subject to the interaction effect. That being said, 
 it seems the data shown presumed that it was an additive effect and no interaction.
 
+2. Carefully explain the differences between KNN classifier and KNN regression methods.
+
+KNN classifer: We classify some qualitative predictor by checking K neighbors next to it. 
+               The neighbor which has the most count is what our predictor is classified as.
+
+KNN regression: We try to fit a non-linear model by using KNN regression which has less
+                innate bias than normal linear regression. A non-parametric method.
+                We find where f(x) lands and then take the average of the K neighbors 
+                around it, that becomes the estimate for f(x) in KNN. 
+
+Key differences: 
+    - KNN classifier doesn't use an average of the K neighbors, KNN regression does
+    - KNN regression is quantitative - we're trying to model the function
+
+Analysis:
+
+
+
 
 
