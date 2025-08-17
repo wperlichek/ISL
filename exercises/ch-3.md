@@ -67,6 +67,8 @@ b3 = 35 (Level)
 b4 = .01 (IQ and GPA)
 b5 = -10 (GPA and Level)
 
+f(x) = 50 + 20x1 + .07x2 = 35x3 + .01x4 - 10x5
+
 True or false:  For a fixed value of IQ and GPA, high school graduates earn
 more, on average, than college graduates?
 
