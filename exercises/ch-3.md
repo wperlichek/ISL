@@ -51,9 +51,13 @@ Analysis:
 3. 
 
 x1 = GPA
+
 x2 = IQ
+
 X3 = Level (1 for college, 0 for high school)
+
 x4 = Interaction between GPA and IQ 
+
 x5 = Interaction between GPA and Level
 
 Response = starting salary after graduation (in thousands of dollars)
@@ -61,21 +65,53 @@ Response = starting salary after graduation (in thousands of dollars)
 Suppose we use least squares to fit the model, and get:
 
 b0 = 50 (intercept)
+
 b1 = 20 (GPA)
+
 b2 = .07 (IQ)
+
 b3 = 35 (Level)
+
 b4 = .01 (IQ and GPA)
+
 b5 = -10 (GPA and Level)
 
-f(x) = 50 + 20x1 + .07x2 = 35x3 + .01x4 - 10x5
+$\hat{f}(x) = 50 + 20x_1 + 0.07x_2 + 35x_3 + 0.01(x_1 \cdot x_2) - 10(x_1 \cdot x_3)$
+
+Where the variables are interpreted as:
+
+* $x_1$: GPA
+* $x_2$: IQ
+* $x_3$: Education Level (0 = High School, 1 = College)
+* $(x_1 \cdot x_2)$: Interaction between GPA and IQ
+* $(x_1 \cdot x_3)$: Interaction between GPA and Education Level
 
 True or false:  For a fixed value of IQ and GPA, high school graduates earn
 more, on average, than college graduates?
 
-FALSE: We see the level coefficient is 35. If the person went to college, 
-their level is 1, thus the coefficient of 35 applies. If not it's always 0
-so the coefficient does not apply.
+ANSWER: 
 
-True of false:  For a fixed value of IQ and GPA, college graduates earn
+RATIONALE:
+
+True of false: For a fixed value of IQ and GPA, college graduates earn
 more, on average, than high school graduates.
 
+ANSWER: 
+
+RATIONALE:
+
+True of false: For a fixed value of IQ and GPA, high school graduates earn
+more, on average, than college graduates provided that the
+GPA is high enough.
+
+ANSWER: 
+
+RATIONALE:
+
+True or false: For a fixed value of IQ and GPA, college graduates earn
+more, on average, than high school graduates provided that
+the GPA is high enough.
+
+ANSWER: 
+
+RATIONALE:
