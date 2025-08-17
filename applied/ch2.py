@@ -46,15 +46,23 @@ plt.ylabel("Out of state tuition $")
 plt.title("")
 plt.savefig("../plots/OutstateVsElite.png")
 
-
 # 8g
 plt.figure()  # Clear old plot info
 fig, axs = plt.subplots(2, 2, figsize=(12, 8))
-axs[0, 0].set_title("Apps")
-axs[1, 1].set_title("Enroll")
+axs[0, 1].set_title("Accept")
+axs[1, 0].set_title("Enroll")
+axs[1, 1].set_title("Top10perc")
 
-college["Apps"].plot.hist(ax=axs[0, 0], bins=20, color="skyblue", edgecolor="black")
-college["Enroll"].plot.hist(ax=axs[1, 1], bins=20, color="purple", edgecolor="black")
+college["Apps"].plot.hist(ax=axs[0, 0], bins=20, color="grey", edgecolor="black")
+axs[0, 0].set_title("Applications received per college")
+axs[0, 0].set_xlabel("Apps Received")
+axs[0, 0].set_ylabel("Count of colleges")
+college["Accept"].plot.hist(ax=axs[0, 1], bins=20, color="skyblue", edgecolor="black")
+college["Enroll"].plot.hist(ax=axs[1, 0], bins=20, color="green", edgecolor="black")
+college["Top10perc"].plot.hist(ax=axs[1, 1], bins=20, color="yellow", edgecolor="black")
+plt.tight_layout()
 plt.savefig("../plots/CollegeHist.png")
 
 plt.close()
+
+## 8f
