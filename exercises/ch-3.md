@@ -86,7 +86,24 @@ Where the variables are interpreted as:
 * $(x_1 \cdot x_2)$: Interaction between GPA and IQ
 * $(x_1 \cdot x_3)$: Interaction between GPA and Education Level
 
-True or false:  For a fixed value of IQ and GPA, high school graduates earn
+
+Analysis of the function behavior: 
+- Everyone has a default 
+starting salary of 50 no matter if they went to college or not.
+
+- You get a small boost to your starting salary the higher the product of your GPA and IQ is (small boost, it's not significant compared to other factors).
+
+- Generally, IQ has a positive impact on your starting salary. 
+
+- If you did not go to college, you are not subject a GPA penalty that college grads have. College grads actually have a small decrease in starting salary 
+that scales with their GPA, higher GPA = greater decrease in starting salary,
+which is puzzling
+
+- However, college grads get the biggest boost to their income potential too. This invididual predictor (not considering any other interaction effects) is the single strongest predictor of starting salary 
+
+- GPA, too, is a strong predictor of starting salary - this is true if you went to college or not. Even more, high school students with a high GPA don't get punished by the interaction effect by GPA and education level like college students do, so high school students in particular should try to get a high GPA if they want a good starting salary out of high school.
+
+True or false: For a fixed value of IQ and GPA, high school graduates earn
 more, on average, than college graduates?
 
 ANSWER: 
