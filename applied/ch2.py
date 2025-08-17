@@ -102,5 +102,19 @@ print(
     "The qualitative predictors are name and origin. The rest of the predictors are all quantitative, e.g. mpg"
 )
 
+# 9b
 print("Here is the range of each quantitative variable: ")
-print(autos_df.min(numeric_only=True))  # Prints the min of EVERY column value
+autos_df_without_origin = autos_df.drop("origin", axis=1)
+print(
+    autos_df_without_origin.max(numeric_only=True)
+    - autos_df_without_origin.min(numeric_only=True)
+)
+
+# 9c
+print("Here are the mean and standard deviation of each quantitative predictor")
+print(autos_df_without_origin.mean(numeric_only=True))
+print(autos_df_without_origin.std(numeric_only=True))
+
+
+autos_df_without_origin["displacement"].hist(bins=50)
+plt.savefig("../plots/DisplacementData.png")
