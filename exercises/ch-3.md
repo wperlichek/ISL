@@ -67,7 +67,10 @@ b3 = 35 (Level)
 b4 = .01 (IQ and GPA)
 b5 = -10 (GPA and Level)
 
-
 True or false:  For a fixed value of IQ and GPA, high school graduates earn
 more, on average, than college graduates?
+
+FALSE: We see the level coefficient is 35. If the person went to college, 
+their level is 1, thus the coefficient of 35 applies. If not it's always 0
+so the coefficient does not apply.
 
