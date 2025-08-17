@@ -76,3 +76,6 @@ FALSE: We see the level coefficient is 35. If the person went to college,
 their level is 1, thus the coefficient of 35 applies. If not it's always 0
 so the coefficient does not apply.
 
+True of false:  For a fixed value of IQ and GPA, college graduates earn
+more, on average, than high school graduates.
+
