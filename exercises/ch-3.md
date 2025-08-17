@@ -48,6 +48,25 @@ Analysis:
     - Pretty much correct. Obvious addition: classifer vs regression problem, each has own use
 
 
+3. 
+
+x1 = GPA
+x2 = IQ
+X3 = Level (1 for college, 0 for high school)
+x4 = Interaction between GPA and IQ 
+x5 = Interaction between GPA and level
+
+Response = starting salary after graduation (in thousands of dollars)
+
+Suppose we use least squares to fit the model, and get:
+
+b0 = 50
+b1 = 20
+b2 = .07
+b3 = 35
+b4 = .01
+b5 = -10
+
 
 
 
