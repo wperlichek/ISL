@@ -49,6 +49,7 @@ plt.savefig("../plots/OutstateVsElite.png")
 # 8g
 plt.figure()  # Clear old plot info
 fig, axs = plt.subplots(2, 2, figsize=(12, 8))
+fig.suptitle(f"Application data for {len(college)} colleges")
 axs[0, 1].set_title("Accept")
 axs[1, 0].set_title("Enroll")
 axs[1, 1].set_title("Top10perc")
@@ -66,3 +67,9 @@ plt.savefig("../plots/CollegeHist.png")
 plt.close()
 
 ## 8f
+
+# ~500 colleges receive ~2500 apps
+# ~420 colleges accept ~1250 apps (50% acceptance rate)
+# ~310 colleges enroll ~333 students
+
+# Summary of above:
