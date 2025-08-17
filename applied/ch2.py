@@ -96,3 +96,12 @@ autos = read_csv(BASE_PATH + AUTO_DATA)
 print("Shape: {}".format(autos.shape))
 print("Descriptive stats:")
 print(autos.describe())
+
+# 9a
+print(
+    "The qualitative predictors are name and origin. The rest of the predictors are all quantiative, e.g. mpg"
+)
+
+print("Here is the range of each quantitative variable: ")
+for ele in autos.describe():
+    print(ele)
