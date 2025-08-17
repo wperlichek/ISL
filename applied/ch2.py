@@ -23,7 +23,6 @@ college = college3
 # plt.savefig('../plots/my_plot.png')
 
 ## 8e
-
 pd.plotting.boxplot(college, column='Outstate', by='Private', figsize=(10,8))
 plt.suptitle('')
 plt.xlabel('Private School')
@@ -32,6 +31,12 @@ plt.title('')
 plt.savefig('../plots/my_plot2.png')
 summary_stats = college.groupby('Private')['Outstate'].describe()
 print(summary_stats)
+
+
+#8f
+college['Elite'] = pd.cut(college['Top10perc']/100, [0, 0.5, 1], labels = ['No', 'Yes'])
+print("Count of elite universities: {}", pd.value_counts(college['Elite']))
+
 plt.close()
 
 
