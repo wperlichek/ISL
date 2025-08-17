@@ -92,16 +92,15 @@ plt.close()
 # 25% of 333 ~88 students
 # The most frequent scenario is a college enrolls ~88 students who were in the top 10% of their class
 plt.figure()
-autos = read_csv(BASE_PATH + AUTO_DATA)
-print("Shape: {}".format(autos.shape))
+autos_df = read_csv(BASE_PATH + AUTO_DATA)
+print("Shape: {}".format(autos_df.shape))
 print("Descriptive stats:")
-print(autos.describe())
+print(autos_df.describe())
 
 # 9a
 print(
-    "The qualitative predictors are name and origin. The rest of the predictors are all quantiative, e.g. mpg"
+    "The qualitative predictors are name and origin. The rest of the predictors are all quantitative, e.g. mpg"
 )
 
 print("Here is the range of each quantitative variable: ")
-for ele in autos.describe():
-    print(ele)
+print(autos_df.min(numeric_only=True))  # Prints the min of EVERY column value
