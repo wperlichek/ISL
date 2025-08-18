@@ -118,3 +118,27 @@ print(autos_df_without_origin.std(numeric_only=True))
 
 autos_df_without_origin["displacement"].hist(bins=50)
 plt.savefig("../plots/DisplacementData.png")
+
+
+# 9d
+
+# Remove the 10th through the 85th observations
+print(
+    "Here are the range mean and standard deviation of each quantitative predictor with the 10th through 85th observations removed"
+)
+
+auto_df_without_origin_dropped = autos_df_without_origin.drop(
+    autos_df_without_origin.index[10:85]
+)
+
+print("range------")
+print(
+    auto_df_without_origin_dropped.max(numeric_only=True)
+    - auto_df_without_origin_dropped.min(numeric_only=True)
+)
+
+print("mean------")
+print(auto_df_without_origin_dropped.mean(numeric_only=True))
+
+print("standard deviation------")
+print(auto_df_without_origin_dropped.std(numeric_only=True))
