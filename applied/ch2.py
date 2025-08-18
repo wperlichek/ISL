@@ -194,7 +194,7 @@ print(boston)
 # 10b
 print(boston.shape)
 # 506 rows, 13 columns
-# The rows each represent a piece of sample data, an observation
+# The rows each represent a piece of sample data, an observation, in this case an observation is a suburb of boston
 # The columns are the predictors contained in the observation
 
 # 10c
@@ -220,3 +220,25 @@ plt.close("all")
 pd.plotting.scatter_matrix(boston[["age", "crim"]], figsize=(10, 6))
 plt.savefig("../plots/AgeVsCrim.png")
 # If we are looking at homes that are >80 years old, we see the crime rate rise to higher levels than previously seen. Old, old houses = high crime.
+
+# 10e
+# Pretend you shopping for a suburb and are concerned with high crime rates, tax rates, and pupil teacher ratios.
+
+# Crime
+plt.close("all")
+boston["crim"].plot.hist()
+plt.savefig("../plots/CrimBoston.png")
+# There are some outliers for crime rates that are high, yes, a few of them. The range is high here.
+
+plt.close("all")
+boston["ptratio"].plot.hist()
+plt.savefig("../plots/PTRatioBoston.png")
+# The data here is more evenly disperesed... Range is lower
+
+plt.close("all")
+boston["tax"].plot.hist()
+plt.savefig("../plots/TaxBoston.png")
+# Range is pretty high here, from 200 to 700. The most frequent scenario is your suburb is taxed the max!
+
+
+# 10f
