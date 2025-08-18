@@ -177,7 +177,14 @@ Answer:
         1 predictor and 1 response is a simple setup. It gives us hope that the cubic regression might actually perform better than we think. 
         Still, _linear regression in 100 observations should have a lower RSS than the cubic regression_ because it won't suffer from a bias 
         or variance penalty. The cubic regression will be "catching up" while the linear regression will be fine-tuning the model and possibly
-        approaching the true relationship quicker in 100 observations.
+        approaching the true relationship quicker in 100 observations. 
+        
+        It's close... It could largely depend on the data. E.g. if the data patterns are consistent (standard deviation is low) then perhaps the cubic regression
+        could be about the same as the linear regression. Still, the cubic regression has to overcome making a non-linear function linear... it will always have that
+        hurdle...
 
+**4b**
+
+On test data, we expect the linear regression to have a lower RSS. The cubic regression could have mastered the training set in 100 observations, but it shows high variance - if presented with test data that say has outliers, it will perform much more poorly than the linear regression and have a higher RSS.
 
 
