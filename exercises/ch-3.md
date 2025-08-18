@@ -136,6 +136,10 @@ RATIONALE: A college graduate who has a really high GPA could lose to a high sch
 
 **9b**
 
+Predict the salary of a college graduate with IQ of 110 and a
+GPA of 4.0.
+
+Answer:
 
 
 **9c**
