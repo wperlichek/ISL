@@ -48,7 +48,7 @@ Analysis:
     - Pretty much correct. Obvious addition: classifer vs regression problem, each has own use
 
 
-3. 
+**3a**
 
 x1 = GPA
 
@@ -134,15 +134,17 @@ ANSWER: FALSE
 RATIONALE: A college graduate who has a really high GPA could lose to a high school grad with a very high GPA because the high school grad would get all the benefit of x1 without the penalty of the interaction effect. 
 
 
-**9b**
+**3b**
 
 Predict the salary of a college graduate with IQ of 110 and a
 GPA of 4.0.
 
 Answer:
 
+50 + 20(4.0) + .07(110) + 35(1) + .01 (4.0 * 110) - 10 (4.0 * 1) = ~137
 
-**9c**
+
+**3c**
 
 False. It doesn't mean that there is no evidence for the effect, it just means thats the effect itself is small. We would need to look at the p-value to examine the evidence for this interaction event, AKA what is the chance we would see this interaction event by random chance. If less than some threshold, then we reject the null hypothesis that there is no interaction effet between GPA and IQ. 
 
