@@ -247,3 +247,10 @@ status_counts = boston["chas"].value_counts()
 print("Not near charles river vs near charles river: " + str(status_counts))
 status_counts.plot(kind="bar", rot=0)  # rot=0 keeps labels horizontal
 plt.savefig("../plots/CharlesRiverBoston.png")
+
+
+# Overall stats:
+print(boston.describe())
+# Median PTratio is 19.050000
+
+# 10h
