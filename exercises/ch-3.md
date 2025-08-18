@@ -203,4 +203,15 @@ The linear regression could have not even made much progress on the model after 
 training observations could produce good progress for the cubic regression. 
 
 
+**4-Analysis**
+
+**4a** WRONG. For the TRAINING set, the more flexible model will have an RSS <= less flexible model. The non-linear model can simply set coefficients to 0 if it needs and also it could find non-zero values for some coefficients (it has more) that allow it to fit the set better.
+
+**4b** Correct
+
+**4c** Correct
+
+**4d** Not nuanced enough. The correct answer depends on degree on non-linearity. If the non-linearity is small, the linear model will win because the cubic model will have
+        higher variance from the training set. The linear models bias would not hurt as much as the variance. Conversely, if the non-linear model is highly non-linear
+        the bias penalty will be too great for the linear model. So it depends. This is about the bias-variance tradeoff.
 
