@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from ISLP import load_data
 
 BASE_PATH = "../data/"
 COLLEGE_DATA = "college.csv"
@@ -179,3 +180,43 @@ plt.suptitle("MPG by Cylinders")
 pd.plotting.scatter_matrix(autos_df[["mpg", "cylinders"]], figsize=(10, 6))
 plt.savefig("../plots/MPGvsCyl.png")
 # As expected, lower cylinders generally has higher MPG
+
+
+# 10a
+
+plt.close("all")
+boston = load_data("Boston")
+
+print("BOSTON DATA SET: ")
+print(boston)
+# https://intro-stat-learning.github.io/ISLP/datasets/Boston.html
+
+# 10b
+print(boston.shape)
+# 506 rows, 13 columns
+# The rows each represent a piece of sample data, an observation
+# The columns are the predictors contained in the observation
+
+# 10c
+# Let's make a scatter plot of pupil teacher ratio vs crime
+# We are wondering: is there a relationship between pupil-teacher ratio and crime
+
+pd.plotting.scatter_matrix(boston[["ptratio", "crim"]], figsize=(10, 6))
+plt.savefig("../plots/PTRatioVsCrim.png")
+plt.close("all")
+# We see a spike in crime when pupil to teacher ratio is ~20
+
+# Lets look at nitrous oxide concentration vs median value of homes in 1000s
+# We are wondering: if an area has high nitrous oxide concentration, are the homes cheaper?
+pd.plotting.scatter_matrix(boston[["nox", "medv"]], figsize=(10, 6))
+plt.savefig("../plots/NoxVsMedv.png")
+# Actually yes - once we reach a certain nitrous level, we see home levels stay below ~30. This suggests certain areas with these nitrous levels have less expensive homes
+# The data is much more varied below this threshold nitrous level.
+
+# 10d
+# We saw a spike in crime rate for pupil to teacher ratio. but maybe there's a better predictor for this.
+# Lets examine something like - age and crime rate
+plt.close("all")
+pd.plotting.scatter_matrix(boston[["age", "crim"]], figsize=(10, 6))
+plt.savefig("../plots/AgeVsCrim.png")
+# If we are looking at homes that are >80 years old, we see the crime rate rise to higher levels than previously seen. Old, old houses = high crime.
