@@ -142,3 +142,24 @@ print(auto_df_without_origin_dropped.mean(numeric_only=True))
 
 print("standard deviation------")
 print(auto_df_without_origin_dropped.std(numeric_only=True))
+
+# 9e
+
+# Plot cylinders vs weight
+# Question is: does having lower cylinders generally mean having lower weight?
+plt.close("all")
+
+# What do I want to see?
+# x-axis: the weight of the car
+# y-axis: how many cylinders
+# It sounds like I need a scatter plot
+
+plt.suptitle("Cylinders by Weight")
+pd.plotting.scatter_matrix(autos_df[["cylinders", "weight"]], figsize=(10, 6))
+
+
+plt.savefig("../plots/WeightVsCyl.png")
+
+# As expected, we see that increasing the cylinders in a car generally leads to an increase in weight
+
+# Now explore something that I would not make assumptions about
