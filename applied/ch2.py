@@ -254,3 +254,32 @@ print(boston.describe())
 # Median PTratio is 19.050000
 
 # 10h
+plt.close("all")
+boston["medv"].plot.hist()
+plt.savefig("../plots/medv.png")
+
+print("The min value of medv is " + str(boston["medv"].min()))
+
+suburb_with_min_price = boston[boston["medv"] == boston["medv"].min()]
+
+print("The total suburb info for this one(s) is \n" + str(suburb_with_min_price))
+
+# Crim is near the max for one, and much higher than the median. It's in the upper range of crime.
+# ZN is median
+# There's a higher than average non-retail business acres, maybe industrial?
+# chas - these are not close to the charles river,
+# Noxious fumes are higher than median. In fact they are above the 75% percentile, more evidence for industrial
+# These are the oldest homes on the list, the highest age ranking
+# Overall we see a trend that undeseriable characteristics come in batches - we extremes in several predictors that negatively impact quality of life
+
+
+# 10i
+suburb_with_more_than_seven_rooms = boston[boston["rm"] > 7.00]
+suburb_with_more_than_eight_rooms = boston[boston["rm"] > 8.00]
+
+
+print("Those with greater than 7 rooms: \n" + str(suburb_with_more_than_seven_rooms))
+print("Those with greater than 8 rooms: \n" + str(suburb_with_more_than_eight_rooms))
+
+# A couple of homes are close to the river, which is unusual given the small selection
+#
