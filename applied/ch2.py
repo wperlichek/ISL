@@ -163,3 +163,11 @@ plt.savefig("../plots/WeightVsCyl.png")
 # As expected, we see that increasing the cylinders in a car generally leads to an increase in weight
 
 # Now explore something that I would not make assumptions about
+
+plt.close("all")
+
+plt.suptitle("Displacement by Acceleration")
+pd.plotting.scatter_matrix(autos_df[["displacement", "acceleration"]], figsize=(10, 6))
+plt.savefig("../plots/DisplVsAccel.png")
+
+# Shows heteroscedasticity, e.g. acceleration becomes negatively linear with displacement after we exceed about 200 in displacement.
