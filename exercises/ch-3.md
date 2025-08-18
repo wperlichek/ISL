@@ -187,4 +187,20 @@ Answer:
 
 On test data, we expect the linear regression to have a lower RSS. The cubic regression could have mastered the training set in 100 observations, but it shows high variance - if presented with test data that say has outliers, it will perform much more poorly than the linear regression and have a higher RSS.
 
+**4c**
+
+If the true relationship is not linear, but we don't know how far, it's hard to say, there is not enough information to tell. 
+Practically we could start with a linear regression and see how it performs. If it performs poorly, we switch to the cubic regression. 
+
+A linear model has a default bias that is a penalty on any non-linear model. With 100 observations, the cubic regression would probably
+perform better (have a lower RSS) than the linear regression.
+
+**4d**
+
+I would expect the cubic regression to perform better than the linear regression on test data. 
+It will have adhered to the non-linear model better and suffer from less bias. 
+The linear regression could have not even made much progress on the model after 100 observations if the model is non-linear enough, whereas 100 
+training observations could produce good progress for the cubic regression. 
+
+
 
