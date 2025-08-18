@@ -171,3 +171,11 @@ pd.plotting.scatter_matrix(autos_df[["displacement", "acceleration"]], figsize=(
 plt.savefig("../plots/DisplVsAccel.png")
 
 # Shows heteroscedasticity, e.g. acceleration becomes negatively linear with displacement after we exceed about 200 in displacement.
+
+
+# 9f
+plt.close("all")
+plt.suptitle("MPG by Cylinders")
+pd.plotting.scatter_matrix(autos_df[["mpg", "cylinders"]], figsize=(10, 6))
+plt.savefig("../plots/MPGvsCyl.png")
+# As expected, lower cylinders generally has higher MPG
