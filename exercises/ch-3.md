@@ -215,3 +215,80 @@ training observations could produce good progress for the cubic regression.
         higher variance from the training set. The linear models bias would not hurt as much as the variance. Conversely, if the non-linear model is highly non-linear
         the bias penalty will be too great for the linear model. So it depends. This is about the bias-variance tradeoff.
 
+**5**
+
+SEE IMAGES "NON-INTERCEPT
+
+### Summary of Work: Linear Regression without an Intercept
+
+#### 1. Model Definition
+
+The analysis starts with the model for linear regression without an intercept, where the fitted value `ŷ_i` is a direct product of the predictor `x_i` and the estimated coefficient `B_hat`.
+
+* **Fitted Value (`ŷ_i`):**
+    ```
+    ŷ_i = x_i * B̂
+    ```
+
+* **Estimated Coefficient (`B̂`):**
+    ```
+    B̂ = (Σᵢ xᵢyᵢ) / (Σᵢ xᵢ²)
+    ```
+
+---
+
+#### 2. Numerical Example
+
+A specific example with `n=3` data points `(1,2), (2,3), (3,4)` was used to calculate `B̂`.
+
+* **Calculate the sum of `xᵢyᵢ`:**
+    ```
+    Σᵢ xᵢyᵢ = (1 * 2) + (2 * 3) + (3 * 4)
+           = 2 + 6 + 12
+           = 20
+    ```
+
+* **Calculate the sum of `xᵢ²`:**
+    ```
+    Σᵢ xᵢ² = 1² + 2² + 3²
+           = 1 + 4 + 9
+           = 14
+    ```
+
+* **Solve for `B̂`:**
+    ```
+    B̂ = 20 / 14 ≈ 1.43
+    ```
+
+---
+
+#### 3. Calculating a Fitted Value
+
+Using the calculated `B̂`, a fitted value was predicted for a given `x`.
+
+* **For `x = 4`:**
+    ```
+    ŷ = (4) * (1.43)
+    ŷ = 5.72
+    ```
+
+---
+
+#### 4. Exploring the General Form
+
+The final part of the notes connects this process to the problem's goal: showing that the fitted value `ŷ_i` is a linear combination of the response values `yᵢ'`.
+
+* **Target Form:**
+    ```
+    ŷᵢ = Σᵢ' aᵢ'yᵢ'
+    ```
+* **Question:** What is `aᵢ'`?
+
+$$
+a_{i'} = \frac{x_i x_{i'}}{\sum_{k=1}^{n} x_k^2}
+$$
+
+
+
+
+
