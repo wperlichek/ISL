@@ -106,29 +106,29 @@ which is puzzling
 True or false: For a fixed value of IQ and GPA, high school graduates earn
 more, on average, than college graduates?
 
-ANSWER: 
+ANSWER: FALSE
 
-RATIONALE:
+RATIONALE: The high school grad needs to have a very high GPA and then they will make more
 
 True of false: For a fixed value of IQ and GPA, college graduates earn
 more, on average, than high school graduates.
 
-ANSWER: 
+ANSWER: FALSE
 
-RATIONALE:
+RATIONALE:  This is an absolute statement. We know for high GPAs this isn't true. This must be false.
 
 True of false: For a fixed value of IQ and GPA, high school graduates earn
 more, on average, than college graduates provided that the
 GPA is high enough.
 
-ANSWER: 
+ANSWER: TRUE
 
-RATIONALE:
+RATIONALE: Proof by opposite of below
 
 True or false: For a fixed value of IQ and GPA, college graduates earn
 more, on average, than high school graduates provided that
 the GPA is high enough.
 
-ANSWER: 
+ANSWER: FALSE
 
-RATIONALE:
+RATIONALE: A college graduate who has a really high GPA could lose to a high school grad with a very high GPA because the high school grad would get all the benefit of x1 without the penalty of the interaction effect. 
