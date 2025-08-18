@@ -156,3 +156,28 @@ n = 100 observations
 
 Y = b0 + b1x + b2x^2 + b3x^3 + E
 
+Suppose true relationship is linear.
+
+Would we expect the RSS for the linear regression and also the RSS for the cubic regression. 
+
+Question: Would we expect one to be lower than the other, would be expect them to be the same, or is there not enough info to tell? Justify your answer.
+
+Answer: 
+
+        On the training set:
+
+            Cubic regression: 
+            We expect the cubic regression model to be flexible and adapt to the observations. However, with only 100 observations, it might not be enough
+            for the flexible cubic regression to adhere to the linear model. To be confident that the cubic regression could fit, we need a lot higher observations.
+
+            Linear regression: 
+            If the true relationship is linear, then the linear regression will perform well. It will not suffer the bias penalty it will have on 
+            non-linear models and thus in only 100 observations should closely match the true relationship. 
+            
+        1 predictor and 1 response is a simple setup. It gives us hope that the cubic regression might actually perform better than we think. 
+        Still, _linear regression in 100 observations should have a lower RSS than the cubic regression_ because it won't suffer from a bias 
+        or variance penalty. The cubic regression will be "catching up" while the linear regression will be fine-tuning the model and possibly
+        approaching the true relationship quicker in 100 observations.
+
+
+
