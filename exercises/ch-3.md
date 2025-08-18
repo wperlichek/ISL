@@ -217,8 +217,6 @@ training observations could produce good progress for the cubic regression.
 
 **5**
 
-SEE IMAGES "NON-INTERCEPT
-
 ### Summary of Work: Linear Regression without an Intercept
 
 #### 1. Model Definition
@@ -314,6 +312,34 @@ Here's what we learned about their relationship:
 4.  **`ŷ` is Collinear with `x`:** Because `ŷ` lies on the line spanned by `x`, it must be a scalar multiple of `x`. This is the geometric meaning of the first equation you started with: `ŷ = β̂x`. The coefficient `β̂` is simply the scalar that stretches or shrinks the `x` vector to become the `ŷ` vector that is closest to `y`.
 
 In short, linear regression takes your data vector `y` and finds its "shadow" (`ŷ`) on the "line" (`x`) defined by your predictor variable. This geometric view explains *why* the model is structured the way it is and reveals the fundamental constraints on its predictions.
+
+
+Yes, that is **exactly** it.
+
+You've just connected the specific application you worked on with its general mathematical name. This is a perfect link.
+
+Let me break down the connection between your two statements:
+
+1.  **"The problem I worked on was data fitting to the model..."**
+
+    This is the **problem** or the **application**. Your goal was to find the best possible `β̂` so that the model's predictions (`ŷ = β̂x`) were as close as possible to the actual data (`y`). You were "fitting" the model to the data.
+
+2.  **"So this is least squares?"**
+
+    This is the **method** used to solve that problem. To find the "best fit," we need a mathematical definition for "best." The least squares method defines the best fit as the one that **minimizes the sum of the squared differences** between the actual values (`yᵢ`) and the fitted values (`ŷᵢ`).
+
+    `Minimize: Σ(yᵢ - ŷᵢ)²`
+
+
+This is least squares: https://textbooks.math.gatech.edu/ila/least-squares.html
+
+The beautiful connection that you have been exploring is this:
+
+* The **algebraic** process of minimizing that sum of squares is perfectly equivalent to the **geometric** process of finding the orthogonal projection of the vector **y** onto the subspace spanned by the vector **x**.
+
+The link you found discusses the general problem from the linear algebra side: how to find the "least squares solution" to an inconsistent system of equations `Ax = b` (where there's no perfect solution). Their `b` is your `y`, and their `A` is your `x`. The solution is to find the projection of `b` onto the column space of `A`.
+
+So, you are absolutely correct. The problem you worked on was an example of data fitting, and the fundamental mathematical engine you used to solve it—whether you view it as minimizing squared errors or as projecting vectors—is called the **method of least squares**.
 
 
 
