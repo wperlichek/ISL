@@ -151,5 +151,8 @@ False. It doesn't mean that there is no evidence for the effect, it just means t
 
 **4a**
 
+n = 100 observations 
+1 predictor, 1 response
 
+Y = b0 + b1x + b2x^2 + b3x^3 + E
 
