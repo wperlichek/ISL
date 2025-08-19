@@ -525,4 +525,18 @@ https://www.youtube.com/watch?v=osh80YCg_GM&t=1790s Strang
 
 
 
+**6**
+
+Using (3.4), argue that in the case of simple linear regression, the
+least squares line always passes through the point x_bar, y_bar
+x_bar = the SAMPLE mean (not the population mean)
+
+-> We can rearrange the intercept equation and solve for x_bar and y_bar. 
+   This proves that the line we form must pass through x_bar and y_bar.
+   Because we can take the intercept equation and use it to define x_bar and y_bar
+   the line from the intercept must pass through both. 
+
+
+
+
 
