@@ -520,5 +520,9 @@ This is your new foundation. When you approach your classes, you will be able to
 - ✅ Key takeaway: \(\hat{y}\) is the best shadow of the true \(y\) in the space the model can represent, which is why we usually cannot perfectly match actual \(y\).
 
 
+# Intuition for 5
+https://www.youtube.com/watch?v=osh80YCg_GM&t=1790s Strang
+
+
 
 
